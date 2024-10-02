@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>coding</title>
+  <link rel="stylesheet" type="text/css" href="./base.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script>
+  $(function() {
+    const hum = $('.hamburger, .close');
+    const nav = $('.sp-nav');
+    const swiperContainer = $('.swiperContainer');
+    const swiperOffset = 400; // 高さ
+    
+    hum.on('click', function() {
+        nav.toggleClass('toggle');
+        
+        if (nav.hasClass('toggle')) {
+            swiperContainer.css('margin-top', swiperOffset + 'px'); // Swiperスライド
+        } else {
+            swiperContainer.css('margin-top', '0'); // 元の位置に戻す
+        }
+    });
+  });
+  </script>
+
+</head>
+
+<body>
+  <main>
+
+      <header>
+        <h1 class="head">Casteria</h1>
+        <nav>
+            <ul class="sampleimageul">
+                <li class="sampleimageli"><a href="#">Home</a></li>
+                <li class="sampleimageli"><a href="#">Food</a></li>
+                <li class="sampleimageli"><a href="#">Drink</a></li>
+                <li class="sampleimageli"><a href="#">お問合せ</a></li>
+                <li class="sampleimageli"><a href="#">
+                  <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                  </form>
+                </a></li>
+                <li><a href="#">
+                  <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Search</button>
+                  </div>    
+                </a></li>
+            </ul>
+            </nav> 
+            <nav class="sp-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Drink</a></li>
+                <li><a href="#">お問合せ</a></li>
+                <li><a href="#">
+                  <formrole="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                  </form>
+                </a></li>
+                <li><a href="#">
+                  <div>
+                    <button type="button" class="btn btn-outline-light me-2">Search</button>
+                  </div>    
+                </a></li>
+            </ul>
+            </nav>
+            <div class="hamburger">
+              <span></span>
+           </div>
+      </header>
+
+      <div class="swiperContainer">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/interior.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/restaurant.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/food.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/food2.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+        
+      <p class="info">新型コロナウイルスに対する取り組みの最新情報をご案内</p>
+
+      <h1 class="maincontents">衛生面に関して</h1>
+      <ul class="subcontents hidden">
+        <li class="lihidden">・マスクを着用しての接客</li>
+        <li class="lihidden">・出勤前の検査の徹底</li>
+        <li class="lihidden">・レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</li>
+        <li class="lihidden">・より頻度の高い手洗いの励行</li>
+        <li class="lihidden">・テーブルにお客様用の消毒用アルコールの設置</li>
+        <li class="lihidden">・従業員間の距離確保のため、休憩や研修時の客席利用</li>
+      </ul>
+    
+      <h1 class="maincontents">お客様へのご協力のお願い</h1>
+      <ul class="subcontents hidden">
+        <li class="lihidden">・店内では、飲食時以外のマスク着用をお願いいたします</li>
+        <li class="lihidden">・入店時の手指の消毒にご協力ください</li>
+        <li class="lihidden">・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保のご協力ください</li>
+        <li class="lihidden">・多数でお越しの際は、お1人がまとめてご注文願います（混雑時に入場制限をする場合がございます）</li>
+        <li class="lihidden">・発熱や体調不良の際はご入店をお控えください</li>
+      </ul>
+    
+      <h1 class="maincontents">サービスに関して</h1>
+      <ul class="subcontents hidden">
+        <li class="lihidden">・直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+        <li class="lihidden">・ドリンクやフードのサンプリング中止</li>
+        <li class="lihidden">・地域活動・イベントの中止</li>
+        <li class="lihidden">・混雑時間帯の客席の譲り合いへのご協力お願いの実施</li>
+        <li class="lihidden">・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
+        <li class="lihidden">・混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</li>
+      </ul>
+
+      <p class="contentsimage hidden">Sigunature Food</p>
+      <div class="flex hidden">
+        <figure class="side_image1"><img src="../img/food.jpg" alt="" class="example1"></figure>
+        <p class="side_text1">サーモンは刺身やカルパッチョで食べる<br class="hidden-pc">のが美味しいで<br class="hidden-sp">
+          すが、リッチな気分にな<br class="hidden-pc">れるサーモンステーキがおすす<br class="hidden-sp">
+          めです。<br class="hidden-pc">サーモンのおいしさを引き立てる2種のソ<br class="hidden-pc">ース<br class="hidden-sp">
+          も絶品です！</p>
+      </div>
+
+      <p class="contentsimage hidden">Our Coffee</p>
+      <div class="flex hidden">
+        <figure class="side_image2"><img src="../img/barista.jpg" alt=""></figure>
+            <p class="side_text2">当店のコーヒー豆が厳選して世界中から<br class="hidden-pc">買い付けていま<br class="hidden-sp">
+              す。そして、そのコーヒー<br class="hidden-pc">豆のおいしさを最大限に引き<br class="hidden-sp">
+              出すために<br class="hidden-pc">自社のロースタリーで焙煎しています。
+            </p>
+      </div>
+
+      <p class="contentsimage hidden">Our Food</p>
+      <div class="flex hidden">
+        <figure class="side_image3"><img src="../img/food3.jpg" alt=""></figure>
+            <p class="side_text3">当店は何よりまずは衛生管理に気を付け<br class="hidden-pc">ています。「安<br class="hidden-sp">
+              全・安心」をお届けする<br class="hidden-pc">ために日々継続的な努力を惜し<br class="hidden-sp">
+              みませ<br class="hidden-pc">ん。
+            </p>
+      </div>
+
+      <div class="addresbox hidden">
+          <div class="addres_text hidden">
+            <h1 class="addres_head">Address<br></h1>
+            <p class="addres_body">681 xxxx Drive, xxxxx xxxx #01 - 06 000000<br></p>
+            <p class="addres_body">Opening Hours<br></p>
+            <h1 class="addres_head">Mondays - Friday:10am - 9pm<br></h1>
+            <p class="addres_body">Saturdays, Sundays & public Holidays: 9am- 9am<br></p>
+          </div>
+          <div class="addres_image">
+            <img src="../img/barista.jpg" alt="">
+          </div>
+      </div>
+
+      <p class="center hidden">店舗一覧</p>
+
+      <div class="storeimage hidden">
+        <figure class="store">
+          <img src="../img/restaurant2.jpg" alt="Restaurant in Shibuya">
+          <figcaption><i class="fas fa-map-marker-alt"></i> 東京都渋谷区xxxxx xxxxx</figcaption>
+        </figure>
+      
+        <figure class="store">
+          <img src="../img/restaurant3.jpg" alt="Restaurant in Matsudo">
+          <figcaption><i class="fas fa-map-marker-alt"></i> 千葉県松戸市xxxxx xxxxx</figcaption>
+        </figure>
+      
+        <figure class="store">
+          <img src="../img/restaurant4.jpg" alt="Restaurant in Yokohama">
+          <figcaption><i class="fas fa-map-marker-alt"></i> 神奈川県横浜市xxxxx xxxxx</figcaption>
+        </figure>
+      
+        <figure class="store">
+          <img src="../img/restaurant5.jpg" alt="Restaurant in Kawagoe">
+          <figcaption><i class="fas fa-map-marker-alt"></i> 埼玉県川越市xxxxx xxxxx</figcaption>
+        </figure>
+      </div>
+      
+      
+
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">プライバシーポリシー</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">お問合わせ</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">運営会社</a></li>
+          </ul>
+        </footer>
+      </div>
+
+    </main> 
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    breakpoints:{
+      600:{
+        slidesPerView:2,
+        loop: true,
+        speed: 1500,
+        autoplay:{
+          delay: 1500,
+          disableOnIntraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev"
+       },
+        scrollbar: {
+         el: '.swiper-scrollbar',
+        },
+      },
+    },
+    loop: true,
+    speed: 2000,
+    autoplay:{
+        delay: 1500,
+        disableOnIntraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+  });
+
+  
+  const headings = document.querySelectorAll('h1.maincontents');
+
+  headings.forEach((heading) => {
+  heading.addEventListener('click', () => {
+    const nextUl = heading.nextElementSibling;
+    
+    if (nextUl.classList.contains('hidden')) {
+      nextUl.classList.remove('hidden'); 
+      nextUl.style.maxHeight = nextUl.scrollHeight + "px";
+      nextUl.style.opacity = "1";  // フェードイン不透明度設定
+      nextUl.style.transform = "translateY(0)";
+    } else {
+      nextUl.style.maxHeight = "0"; 
+      nextUl.style.opacity = "0"; 
+      nextUl.style.transform = "translateY(0px)"; // フェードアウト位置調整
+      nextUl.addEventListener('transitionend', () => {
+        nextUl.classList.add('hidden');  // フェードアウト後非表示
+      }, { once: true });
+    }
+  });
+});
+
+
+    function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= 0
+    );
+  }
+
+  function handleScroll() {
+    const elements = document.querySelectorAll('.hidden'); 
+
+    elements.forEach(element => {
+      if (isElementInViewport(element)) {
+        element.classList.add('show');      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+  });
+  
+</script>
+</body>
+</html>
