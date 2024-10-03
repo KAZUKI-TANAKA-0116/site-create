@@ -61,9 +61,6 @@ header{
 	font-weight: bold;
 }
 
-
-
-
 nav{
 	margin-left: auto;
 }
@@ -87,55 +84,55 @@ body{
 
 .form-control-dark {
 	border-color: var(--bs-gray);
-  }
-  .form-control-dark:focus {
+}
+.form-control-dark:focus {
 	border-color: #fff;
 	box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-  }
+}
 form .form-control {
 	font-size: 20px; 
 	padding: 10px 20px; 
 	width: 300px; 
 	border-radius: 5px; 
-  }
-  button.btn {
+}
+button.btn {
 	font-size: 20px; 
 	padding: 10px 20px; 
 	border-radius: 5px;
 	width: 100px; 
-  }
+}
   
   
-  .text-small {
+.text-small {
 	font-size: 85%;
-  }
+}
   
-  .dropdown-toggle:not(:focus) {
+.dropdown-toggle:not(:focus) {
 	outline: 0;
-  }s
+}
 
-  .swiperContainer {
+.swiperContainer {
 	position: relative;
-  }
-  .swiper-slide img{
+}
+.swiper-slide img{
 	height: 640px;
 	width: 100%;
-  }
-  .swiper-scrollbar {
-	bottom: 180px !important;
+}
+.swiper-scrollbar {
+	bottom: -10px !important;
 	left: 50% !important;
 	transform: translateX(-50%);
-  }
+}
 
-  .info{
+.info{
 	margin-top: 10px;
 	margin-left: 15%;
 	letter-spacing: 3px;
 	font-size: 45px;
 	font-weight: 500;
-  }
+}
 
-  .maincontents{
+.maincontents{
 	cursor: pointer;
 	position: relative;
 	display: flex;
@@ -147,16 +144,16 @@ form .form-control {
 	background: #FFC7AF;
 	padding-left: 1em;
 	font-size: 35px;
-  }
-  .maincontents::before {
+}
+.maincontents::before {
 	position: absolute;
 	content: '■';
 	left: 5px;
 	font-size: 80%;
 	color: #000;
-  }
+}
 
-  .lihidden{
+.lihidden{
 	font-size: large;
 	margin-left: 15%;
 	line-height: 2.5em;
@@ -167,12 +164,12 @@ ul.hidden {
 	opacity: 0; 
 	overflow: hidden; 
 	transition: max-height 0.5s ease, opacity 0.5s ease; 
-  }
-  ul {
+}
+ul {
 	max-height: 1000px; 
 	opacity: 1; 
 	transition: max-height 0.5s ease, opacity 0.5s ease;
-  }
+}
 
     /* 横並び */
 
@@ -193,16 +190,16 @@ ul.hidden {
 	padding-top: 10px;
 	overflow: hidden;
 	position: relative;
-  }
-  .flex figure img {
+}
+.flex figure img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover; /* 枠内に収まるように切り取る */
-  }
-  .flex p {
+}
+.flex p {
 	margin: 50px;
 	padding: 0;
-  }
+}
 
 .addresbox{
 	background: #000;
@@ -243,7 +240,7 @@ ul.hidden {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	margin: 20px 0; /* 上下の余白
+	margin: 20px 0; /* 上下の余白*/
 }
 
 .store figcaption {
@@ -270,10 +267,10 @@ ul.hidden {
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
+}
   
   /* 表示アニメーション */
-  .show {
+.show {
 	opacity: 1;
 	transform: translateY(0); /* 元の位置に戻す */
   }
@@ -310,45 +307,46 @@ footer{
 @media (max-width: 480px) 
 {
 	header {
-	  display: flex;
-	  height: auto;
-	  padding: 10px;
+		display: flex;
+		height: auto;
+	  	padding: 10px;
 	}
 	.head {
-	  font-size: 35px; 
+	  	font-size: 35px; 
 	}
 	.sampleimageul {
-	  display: none;
-	  flex-direction: column;
-	  align-items: center;
-	  margin-top: 10px;
+	  	display: none;
+	  	flex-direction: column;
+	  	align-items: center;
+	  	margin-top: 10px;
 	}
 	.sampleimageli {
-	  margin-left: 0;
-	  margin-bottom: 10px;
-	  font-size: 20px; 
+	  	margin-left: 0;
+	  	margin-bottom: 10px;
+	  	font-size: 20px; 
 	}
 
 	.sp-nav {
-      position: fixed;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      height: auto;
-      display: block;
-      width: 100%;
-      background: lightgray;
-      opacity: 0;
-      transform: translateY(-100%);
-      transition: all .3s ease-in-out;
-	 }
+		position: fixed;
+      	top: 70px;
+      	left: 0;
+      	width: 100%;
+      	height: auto;
+      	display: block;
+      	width: 100%;
+      	background: lightgray;
+      	opacity: 0;
+      	transform: translateY(-100%);
+      	transition: all .3s ease-in-out;
+	}
+
 	.hamburger {
 		position: relative;
 		display: block;
 		width: 30px;
 		height: 25px;
 		margin: 0 0 0 auto;
-	 }
+	}
 	.hamburger span {
 		position: absolute;
 		top: 50%;
@@ -358,7 +356,7 @@ footer{
 		height: 2px;
 		background-color: #fff;
 		transform: translateY(-50%);
-	 }
+	}
 	.hamburger::before {
 		content: '';
 		display: block;
@@ -368,7 +366,7 @@ footer{
 		width: 100%;
 		height: 2px;
 		background-color: #fff;
-	 }
+	}
 	.hamburger::after {
 		content: '';
 		display: block;
@@ -378,46 +376,45 @@ footer{
 		width: 100%;
 		height: 2px;
 		background-color: #fff;
-	 }
-	 .sp-nav ul {
+	}
+	.sp-nav ul {
 		padding: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		height: 100%;
-	 }
-	 .sp-nav li {
+	}
+	.sp-nav li {
 		margin: 0;
 		padding: 0;
-	 }
-	 .sp-nav li span {
+	}
+	.sp-nav li span {
 		font-size: 15px;
 		color: #fff;
-	 }
-	 .sp-nav li a, .sp-nav li span {
+	}
+	.sp-nav li a, .sp-nav li span {
 		display: block;
 		padding: 20px 0;
-	 }
-	 .toggle {
+	}
+	.toggle {
 		transform: translateY( 0 );
 		opacity: 1;
 	}
 	 
-
 	.swiperContainer {
 		position: relative;
-	  }
-	  .swiper-slide img{
+	}
+	.swiper-slide img{
 		height: 400px;
 		width: 90%;
 		margin: 30px;
-	  }
-	  .swiper-scrollbar {
+	}
+	.swiper-scrollbar {
 		bottom: -10px !important;
 		left: 50% !important;
 		transform: translateX(-50%);
-	  }
+	}
   
 	.info{
 		width: 90%;
@@ -427,41 +424,41 @@ footer{
 		padding: 10px;
 	}
 	.maincontents {
-	  width: 90%;
-	  font-size: 25px;
-	  margin-left: 5%;
-	  height: auto;
-	  padding: 10px;
-	  padding-left: 25px;
+		width: 90%;
+	  	font-size: 25px;
+	  	margin-left: 5%;
+	  	height: auto;
+	  	padding: 10px;
+	  	padding-left: 25px;
 	}
   
 	.lihidden {
-	  font-size: medium;
-	  margin-left: 5%;
+		font-size: medium;
+	  	margin-left: 5%;
 	}
   
 	.flex {
-	  flex-direction: column;
-	  align-items: center;
-	  margin-left: 0;
+		flex-direction: column;
+	  	align-items: center;
+	  	margin-left: 0;
 	}
 	
 	.flex figure {
-	  width: 90%;
-	  height: auto;
+		width: 90%;
+		height: auto;
 	}
 	
 	.contentsimage {
-	  margin-top: 10%;
-	  margin-left: 10%;
-	  font-size: 20px;
+		margin-top: 10%;
+	  	margin-left: 10%;
+	  	font-size: 20px;
 	}
   
 	.addresbox {
-	  flex-direction: column;
-	  width: 90%;
-	  margin-left: 5%;
-	  margin-bottom: 5%;
+		flex-direction: column;
+	  	width: 90%;
+	  	margin-left: 5%;
+	  	margin-bottom: 5%;
 	}
 
 	img{
